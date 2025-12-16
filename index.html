@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Interactive Bézier Rope</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <style>
+    body {
+      margin: 0;
+      background: #0f0f0f;
+      overflow: hidden;
+      font-family: sans-serif;
+    }
+    canvas {
+      display: block;
+    }
+    button {
+      position: fixed;
+      top: 15px;
+      left: 15px;
+      z-index: 10;
+      padding: 10px 14px;
+      border: none;
+      border-radius: 6px;
+      background: #00ffcc;
+      font-size: 14px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+<button onclick="enableGyro()">Enable Motion</button>
+<canvas id="canvas"></canvas>
+
+<script src="script.js"></script>
+</body>
+</html>
